@@ -20,20 +20,12 @@ body {
     color: var(--cream);
     font-family: 'DM Sans', sans-serif;
     overflow-x: hidden;
-    cursor: none;
+    cursor: auto;
 }
 
 /* --- Custom Cursor --- */
-#cur {
-    width: 10px;
-    height: 10px;
-    background: var(--pink);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    transition: width .2s, height .2s;
+#cur, #fol {
+    display: none;
 }
 
 
@@ -397,6 +389,64 @@ nav {
     font-size: clamp(4.5rem, 13vw, 13rem);
     line-height: .85;
     margin-bottom: 3.5rem;
+}
+
+/* --- Botón Ver más --- */
+.more-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.more-btn {
+    display: inline-block;
+    background: var(--pink);
+    color: #fff;
+    padding: .8rem 1.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .06em;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+.more-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255,62,165,0.18);
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 900px) {
+    .hero-bg-word {
+        font-size: clamp(6rem, 28vw, 20rem);
+        top: 45%;
+    }
+
+    .altare {
+        transform: translateY(6vh);
+        gap: .2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .letter {
+        transform: none !important;
+        opacity: 1 !important;
+        width: clamp(60px, 18vw, 140px) !important;
+        margin-left: 0 !important;
+        filter: none;
+    }
+
+    .hero-center { gap: 2rem; }
+
+    nav { padding: 1rem 1.2rem; }
+}
+
+@media (max-width: 600px) {
+    #about { grid-template-columns: 1fr; }
+    .ab-img { order: 1; height: 50vh; }
+    .ab-txt { order: 2; padding: 2.5rem; }
+    .hero-tl, .hero-tr { display: none; }
+    .hero-sub { font-size: .9rem; }
+    .wk-h { font-size: clamp(2.4rem, 12vw, 5rem); }
 }
 
 .wgrid {
