@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melany Altare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="cur"></div>
+    <div id="fol"></div>
+
+    <nav>
+        <a href="#" class="nav-logo">Melany Altare</a>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#work">Trabajos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-bg-word">MELANY</div>
+        
+        <div class="hero-center">
+            <div class="altare">
+                <img src="A_1.png" alt="A" class="letter a-letra-1">
+                <img src="L.png" alt="L" class="letter l-letra">
+                <img src="T.png" alt="T" class="letter t-letra">
+                <img src="A_2.png" alt="A" class="letter a-letra-2">
+                <img src="R.png" alt="R" class="letter r-letra">
+                <img src="E.png" alt="E" class="letter e-letra">
+            </div>
+            <p class="hero-sub">Diseñadora Multimedial & Creativa</p>
+        </div>
+
+        <div class="hero-tl">
+            <span>Portfolio 2026</span>
+            <span>Basado en Argentina</span>
+        </div>
+
+        <div class="hero-tr">
+            <span>Scroll para explorar</span>
+            <div class="sbar"></div>
+        </div>
+    </section>
+
+    <div class="mq">
+        <div class="mq-inner">
+            <span>DISEÑO GRÁFICO <span class="pk">+</span> BRANDING <span class="pk">+</span> MOTION GRAPHICS <span class="pk">+</span> UI DESIGN <span class="pk">+</span> </span>
+            <span>DISEÑO GRÁFICO <span class="pk">+</span> BRANDING <span class="pk">+</span> MOTION GRAPHICS <span class="pk">+</span> UI DESIGN <span class="pk">+</span> </span>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="ab-img">
+            <img src="Foto de Melany Altare.jpeg" alt="Foto de Melany Altare" class="profile-pic">
+        </div>
+        <div class="ab-txt">
+            <span class="ab-title">Un poco sobre mí</span>
+            <h2 class="ab-h">Creando experiencias visuales que conectan.</h2>
+            <p class="ab-p">Me especializo en transformar ideas en realidades visuales impactantes, combinando técnica y creatividad.</p>
+            <a href="#contact" class="ab-cta">Hablemos ahora</a>
+        </div>
+    </section>
+
+    <div class="band">
+        <div class="band-inner">
+            <span>EXPLORÁ MI TRABAJO <span class="dot">•</span> EXPLORÁ MI TRABAJO <span class="dot">•</span> EXPLORÁ MI TRABAJO <span class="dot">•</span></span>
+            <span>EXPLORÁ MI TRABAJO <span class="dot">•</span> EXPLORÁ MI TRABAJO <span class="dot">•</span> EXPLORÁ MI TRABAJO <span class="dot">•</span></span>
+        </div>
+    </div>
+
+    <section id="work">
+        <h2 class="wk-h">PROYECTOS<br>DESTACADOS</h2>
+        <div class="wgrid">
+            <div class="wi c1 rv">
+                <div class="wi-bg">Proyecto 1</div>
+                <div class="wi-ov">
+                    <span class="wi-c">Branding</span>
+                    <h3 class="wi-t">Identidad Visual</h3>
+                </div>
+            </div>
+            <div class="wi c2 rv">
+                <div class="wi-bg">Proyecto 2</div>
+                <div class="wi-ov">
+                    <span class="wi-c">UI/UX</span>
+                    <h3 class="wi-t">App Design</h3>
+                </div>
+            </div>
+            <div class="wi c3 rv">
+                <div class="wi-bg">Proyecto 3</div>
+                <div class="wi-ov">
+                    <span class="wi-c">Motion</span>
+                    <h3 class="wi-t">Reel 2026</h3>
+                </div>
+            </div>
+            <div class="wi c4 rv">
+                <div class="wi-bg">Proyecto 4</div>
+                <div class="wi-ov">
+                    <span class="wi-c">Editorial</span>
+                    <h3 class="wi-t">Revista Digital</h3>
+                </div>
+            </div>
+            <div class="wi c5 rv">
+                <div class="wi-bg">Proyecto 5</div>
+                <div class="wi-ov">
+                    <span class="wi-c">Social Media</span>
+                    <h3 class="wi-t">Campaña Redes</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="ct-ghost">HABLEMOS</div>
+        <span class="ct-lbl">Próximos pasos</span>
+        <h2 class="ct-h">¿Tenés un proyecto <em>en mente?</em></h2>
+        <div class="ct-btns">
+            <a href="mailto:tuemail@ejemplo.com" class="cbtn">Enviame un mail</a>
+            <a href="#" class="cbtn">LinkedIn</a>
+            <a href="#" class="cbtn">Behance</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="rv">© 2026 Melany Altare. Todos los derechos reservados.</div>
+        <div class="rv">Hecho con ♥ en Santa Fe, Argentina</div>
+    </footer>
+
+    <script>
+        const cur = document.getElementById('cur');
+        const fol = document.getElementById('fol');
+
+        document.addEventListener('mousemove', (e) => {
+            cur.style.left = e.clientX + 'px';
+            cur.style.top = e.clientY + 'px';
+            
+            fol.style.left = e.clientX + 'px';
+            fol.style.top = e.clientY + 'px';
+        });
+
+        // Animación para elementos con clase 'rv' al scrollear
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('on');
+                }
+            });
+        });
+        
+        document.querySelectorAll('.rv').forEach((el) => observer.observe(el));
+    </script>
+
+</body>
+</html>
