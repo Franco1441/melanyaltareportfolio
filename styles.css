@@ -448,21 +448,23 @@ nav {
         top: 44%;
     }
 
+    #hero { overflow: visible; }
+
     .altare {
-        transform: translateY(5vh) scale(0.9);
+        transform: translateY(4.5vh) scale(0.95);
         transform-origin: center top;
-        gap: .12rem;
+        gap: -0.2rem;
         flex-wrap: nowrap;
         justify-content: center;
-        width: calc(100% - 4rem);
-        padding: 0 1.8rem;
+        width: calc(100% - 5.2rem);
+        padding: 0 2.6rem;
         box-sizing: border-box;
         overflow: visible;
     }
 
     .altare .letter {
         width: auto !important;
-        height: clamp(150px, 28vw, 260px) !important;
+        height: clamp(160px, 30vw, 280px) !important;
         opacity: 1;
         --dx: 0px;
         transform: translateX(0) translateY(0) rotate(var(--rot)) !important;
@@ -483,14 +485,16 @@ nav {
 
 /* Extra small phones: reduce scale and keep side padding to avoid clipping */
 @media (max-width: 420px) {
+
     .altare {
-        transform: translateY(5vh) scale(0.82);
-        padding: 0 1.2rem;
-        gap: .12rem;
+        transform: translateY(4vh) scale(0.88);
+        padding: 0 2rem;
+        gap: -0.28rem;
+        width: calc(100% - 4rem);
     }
 
     .altare .letter {
-        height: clamp(130px, 22vw, 220px) !important;
+        height: clamp(140px, 24vw, 240px) !important;
     }
 
     .hero-bg-word {
