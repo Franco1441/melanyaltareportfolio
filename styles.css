@@ -113,7 +113,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: -2rem;
+    gap: .4rem;
     position: relative;
     z-index: 10;
     transform: translateY(9vh);
@@ -433,6 +433,8 @@ nav {
         height: clamp(110px, 20vw, 260px) !important;
         margin-left: 0 !important;
         opacity: 1;
+        --dx: 0px;
+        transform: translateX(0) translateY(0) rotate(var(--rot)) !important;
     }
 
     .hero-center { gap: 2rem; }
@@ -458,6 +460,13 @@ nav {
         width: auto !important;
         height: clamp(120px, 24vw, 220px) !important;
         opacity: 1;
+        --dx: 0px;
+        transform: translateX(0) translateY(0) rotate(var(--rot)) !important;
+    }
+
+    /* Reset individual letter offsets that cause overlap on small screens */
+    .a-letra-1, .l-letra, .t-letra, .a-letra-2, .r-letra, .e-letra {
+        margin-left: 0 !important;
     }
 
     #about { grid-template-columns: 1fr; }
