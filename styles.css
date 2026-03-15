@@ -443,10 +443,10 @@ nav {
 }
 
 @media (max-width: 600px) {
-    body { overflow-x: visible; }
+    body { overflow-x: hidden; }
     .hero-bg-word {
-        font-size: clamp(10rem, 40vw, 32rem);
-        top: 44%;
+        font-size: clamp(8rem, 32vw, 26rem);
+        top: 46%;
     }
 
     #hero { overflow: visible; }
@@ -454,13 +454,13 @@ nav {
     .altare {
         position: absolute;
         left: 50%;
-        transform: translate(-50%, 4.5vh) scale(0.95);
+        transform: translate(-50%, 3.8vh) scale(0.78);
         transform-origin: center top;
-        gap: -0.18rem;
+        gap: -0.36rem;
         flex-wrap: nowrap;
         justify-content: center;
         width: max-content;
-        padding: 0;
+        padding: 0 1rem;
         box-sizing: border-box;
         overflow: visible;
         margin: 0;
@@ -468,7 +468,7 @@ nav {
 
     .altare .letter {
         width: auto !important;
-        height: clamp(160px, 28vw, 260px) !important;
+        height: clamp(120px, 22vw, 200px) !important;
         opacity: 1;
         --dx: 0px;
         transform: translateX(0) translateY(0) rotate(var(--rot)) !important;
@@ -491,14 +491,14 @@ nav {
 @media (max-width: 420px) {
 
     .altare {
-        transform: translateY(4vh) scale(0.88);
-        padding: 0 2rem;
-        gap: -0.28rem;
-        width: calc(100% - 4rem);
+        transform: translateY(3.6vh) scale(0.72);
+        padding: 0 1rem;
+        gap: -0.4rem;
+        width: max-content;
     }
 
     .altare .letter {
-        height: clamp(140px, 24vw, 240px) !important;
+        height: clamp(110px, 20vw, 180px) !important;
     }
 
     .hero-bg-word {
