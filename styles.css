@@ -454,6 +454,10 @@ nav {
         gap: .4rem;
         flex-wrap: nowrap;
         justify-content: center;
+        width: calc(100% - 4rem);
+        padding: 0 2rem;
+        box-sizing: border-box;
+        overflow: visible;
     }
 
     .altare .letter {
@@ -475,6 +479,23 @@ nav {
     .hero-tl, .hero-tr { display: none; }
     .hero-sub { font-size: .9rem; }
     .wk-h { font-size: clamp(2.4rem, 12vw, 5rem); }
+}
+
+/* Extra small phones: reduce scale and keep side padding to avoid clipping */
+@media (max-width: 420px) {
+    .altare {
+        transform: translateY(5.5vh) scale(0.68);
+        padding: 0 1.4rem;
+    }
+
+    .altare .letter {
+        height: clamp(100px, 20vw, 180px) !important;
+    }
+
+    .hero-bg-word {
+        font-size: clamp(8rem, 36vw, 28rem);
+        top: 42%;
+    }
 }
 
 .wgrid {
