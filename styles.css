@@ -416,23 +416,23 @@ nav {
 /* --- Responsive adjustments --- */
 @media (max-width: 900px) {
     .hero-bg-word {
-        font-size: clamp(6rem, 28vw, 20rem);
+        font-size: clamp(8rem, 30vw, 28rem);
         top: 45%;
     }
 
     .altare {
         transform: translateY(6vh);
-        gap: .2rem;
-        flex-wrap: wrap;
+        gap: .6rem;
+        flex-wrap: nowrap;
         justify-content: center;
+        transform-origin: center top;
     }
 
-    .letter {
-        transform: none !important;
-        opacity: 1 !important;
-        width: clamp(60px, 18vw, 140px) !important;
+    .altare .letter {
+        width: auto !important;
+        height: clamp(110px, 20vw, 260px) !important;
         margin-left: 0 !important;
-        filter: none;
+        opacity: 1;
     }
 
     .hero-center { gap: 2rem; }
@@ -441,6 +441,25 @@ nav {
 }
 
 @media (max-width: 600px) {
+    .hero-bg-word {
+        font-size: clamp(10rem, 40vw, 32rem);
+        top: 44%;
+    }
+
+    .altare {
+        transform: translateY(6vh) scale(0.78);
+        transform-origin: center top;
+        gap: .4rem;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .altare .letter {
+        width: auto !important;
+        height: clamp(120px, 24vw, 220px) !important;
+        opacity: 1;
+    }
+
     #about { grid-template-columns: 1fr; }
     .ab-img { order: 1; height: 50vh; }
     .ab-txt { order: 2; padding: 2.5rem; }
